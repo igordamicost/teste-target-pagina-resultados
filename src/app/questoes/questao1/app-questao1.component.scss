@@ -1,0 +1,39 @@
+p {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid #7b1fa2;
+  padding: 10px;
+  margin-top: 1em;
+}
+
+pre code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 2;
+}
+
+::ng-deep.keyword {
+  color: #569cd6 ;
+  font-weight: bolder;
+}
+::ng-deep.punctuation{
+  color: #569cd6 ;
+}
+::ng-deep.function {
+  color: #dcdcaa;
+}
+
+::ng-deep.operator {
+  color: rgb(24, 169, 226);
+}
+
+::ng-deep.number{
+  color: #f8f876;
+}
+

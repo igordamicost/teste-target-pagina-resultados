@@ -1,0 +1,24 @@
+<section>
+  <h2>Questão 2</h2>
+  <app-terminal-component [questao]="texto"></app-terminal-component>
+
+  <input
+    type="number"
+    [(ngModel)]="numero"
+    (ngModelChange)="verificarFibonacci()"
+    placeholder="Digite um número"
+    class="shared-input"
+  />
+  <p
+    class="fibonacci"
+    *ngIf="numero !== null && fibonacci"
+  >
+    {{ mensagem }}
+  </p>
+  <p
+    class="nfibonacci"
+    *ngIf="numero !== null && !fibonacci"
+  >
+    {{ mensagem }}
+  </p>
+</section>

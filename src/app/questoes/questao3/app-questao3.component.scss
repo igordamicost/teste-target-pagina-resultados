@@ -1,0 +1,65 @@
+.container{
+  width: 50%;
+  margin-top: 1em;
+  div{
+    display: flex;
+  }
+}
+section{
+  display: flex;
+  gap:1em;
+}
+.drag-drop-area {
+  border: 2px dashed #3f51b5;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #3f51b5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #7b1fa2;
+    color: white
+  }
+
+  &.dragging {
+    background-color: #bbdefb;
+  }
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.file-input {
+  display: none;
+}
+h2 {
+  margin-top: 2em;
+}
+button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+.dica{
+  font-size: 12px;
+  padding: 1em;
+  background-color: #7b1fa22c;
+  border-radius: 15px;
+}

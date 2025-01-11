@@ -1,0 +1,26 @@
+<section>
+  <h2>Questão 5</h2>
+  <app-terminal-component [questao]="cabecalho"></app-terminal-component>
+  <input
+    type="text"
+    [(ngModel)]="texto"
+    placeholder="Digite um texto"
+    class="shared-input"
+  />
+  <button (click)="inverterTexto()" class="shared-button">Inverter</button>
+  <div class="card" *ngIf="textoInvertido || letrasInvertidas">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+          Texto com ordem completamente invertida:<br/><br/>
+          {{ textoInvertido }}
+        </p>
+      </div>
+      <div class="card-back">
+        <p>
+          Texto com apenas as vogais invertidas: <br/><br/>{{ letrasInvertidas }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
