@@ -1,0 +1,33 @@
+<h2>Questão 3</h2>
+<app-terminal-component [questao]="texto"></app-terminal-component>
+<section>
+  <div class="container">
+    <div
+      matRipple
+      class="drag-drop-area"
+      (drop)="onFileDropped($event)"
+      (dragover)="onDragOver($event)"
+      (dragleave)="onDragLeave($event)"
+    >
+      <p>Arraste e solte o arquivo aqui ou selecione abaixo</p>
+    </div>
+
+    <div>
+      <label for="fileInput" class="file-input-label">
+        Escolha um arquivo
+      </label>
+      <input
+        id="fileInput"
+        type="file"
+        (change)="processarArquivo($event)"
+        class="file-input"
+      />
+    </div>
+    <app-table *ngIf="resultadosArray.length > 0" [data]="resultadosArray" [columns]="resultadosColumns"></app-table>
+  </div>
+  <div class="dica">
+    Para essa questão:
+    <li>Arraste e solte o Xml ou Json</li>
+    <li>Clique no botão e selecione o Xml ou Json</li>
+  </div>
+</section>
